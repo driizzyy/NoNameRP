@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economy System - NoName RP</title>
+    <link rel="icon" href="../../img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="scroll-progress"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">
+                <img src="../../img/favicon.png" alt="NoNameRP Logo" class="nav-logo-img">
+                <span class="logo-text">NoName <span class="rp-text">RP</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../../index.html" class="nav-link">Home</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link">Server <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rules.html"><i class="fas fa-gavel"></i> Rules</a></li>
+                        <li><a href="staff.html"><i class="fas fa-user-shield"></i> Staff Team</a></li>
+                        <li><a href="economy.html"><i class="fas fa-coins"></i> Economy</a></li>
+                        <li><a href="gangs.html"><i class="fas fa-skull"></i> Gangs</a></li>
+                    </ul>
+                </li>
+                <li><a href="alpha-whitelist.html" class="nav-link">Alpha Access</a></li>
+                <li><a href="connect.html" class="nav-link">Connect</a></li>
+                <li><a href="https://discord.gg/HCdThGFfqN" class="nav-link nav-discord" target="_blank"><i class="fab fa-discord"></i> Discord</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content-center">
+                <span class="hero-badge"><i class="fas fa-coins"></i> ECONOMY GUIDE</span>
+                <h1 class="page-title">Server Economy</h1>
+                <p class="page-description">A balanced and realistic economy system that rewards hard work and smart decisions</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="economy-content">
+        <div class="container">
+            <div class="economy-intro">
+                <h2><i class="fas fa-chart-line"></i> How Our Economy Works</h2>
+                <p>NoName RP features a dynamic economy system designed to create meaningful interactions and reward various playstyles. Whether you choose the path of law enforcement, business ownership, or the criminal underworld, there are opportunities to earn and spend money realistically.</p>
+            </div>
+
+            <div class="economy-grid">
+                <div class="economy-section">
+                    <div class="section-icon legal-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Legal Employment</h3>
+                    <p class="section-description">Honest work with steady paychecks and benefits</p>
+                    <div class="job-list">
+                        <div class="job-item">
+                            <div class="job-header">
+                                <h4><i class="fas fa-shield-alt"></i> Police Officer</h4>
+                                <span class="job-salary">,500-4,500/hr</span>
+                            </div>
+                            <p>Patrol the streets, respond to calls, and uphold the law. Includes bonuses for arrests and citations.</p>
+                            <div class="job-perks">
+                                <span><i class="fas fa-check"></i> Free vehicles</span>
+                                <span><i class="fas fa-check"></i> Health insurance</span>
+                                <span><i class="fas fa-check"></i> Arrest bonuses</span>
+                            </div>
+                        </div>
+                        <div class="job-item">
+                            <div class="job-header">
+                                <h4><i class="fas fa-ambulance"></i> EMS/Doctor</h4>
+                                <span class="job-salary">,000-4,000/hr</span>
+                            </div>
+                            <p>Save lives and treat injuries. Payment per treatment plus hourly wage.</p>
+                            <div class="job-perks">
+                                <span><i class="fas fa-check"></i> Treatment fees</span>
+                                <span><i class="fas fa-check"></i> Surgery bonuses</span>
+                                <span><i class="fas fa-check"></i> Free supplies</span>
+                            </div>
+                        </div>
+                        <div class="job-item">
+                            <div class="job-header">
+                                <h4><i class="fas fa-wrench"></i> Mechanic</h4>
+                                <span class="job-salary">,500-3,500/hr</span>
+                            </div>
+                            <p>Repair vehicles and customize cars. Commission-based earnings on repairs.</p>
+                            <div class="job-perks">
+                                <span><i class="fas fa-check"></i> Repair fees</span>
+                                <span><i class="fas fa-check"></i> Custom work tips</span>
+                                <span><i class="fas fa-check"></i> Parts markup</span>
+                            </div>
+                        </div>
+                        <div class="job-item">
+                            <div class="job-header">
+                                <h4><i class="fas fa-taxi"></i> Taxi Driver</h4>
+                                <span class="job-salary">-2,000/hr</span>
+                            </div>
+                            <p>Transport citizens around the city. Fare-based income plus tips.</p>
+                            <div class="job-perks">
+                                <span><i class="fas fa-check"></i> Fare income</span>
+                                <span><i class="fas fa-check"></i> Tips</span>
+                                <span><i class="fas fa-check"></i> Flexible hours</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="economy-section">
+                    <div class="section-icon business-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Business Ownership</h3>
+                    <p class="section-description">Own and operate your own business empire</p>
+                    <div class="business-list">
+                        <div class="business-item">
+                            <h4><i class="fas fa-store-alt"></i> 24/7 Store</h4>
+                            <div class="business-details">
+                                <span class="price"><i class="fas fa-tag"></i> Purchase: ,000</span>
+                                <span class="income"><i class="fas fa-dollar-sign"></i> Income: ,000-15,000/day</span>
+                            </div>
+                            <p>Sell essential goods to players. Stock management and pricing control.</p>
+                        </div>
+                        <div class="business-item">
+                            <h4><i class="fas fa-warehouse"></i> Auto Shop</h4>
+                            <div class="business-details">
+                                <span class="price"><i class="fas fa-tag"></i> Purchase: ,000</span>
+                                <span class="income"><i class="fas fa-dollar-sign"></i> Income: ,000-30,000/day</span>
+                            </div>
+                            <p>Repair and customize vehicles. Hire mechanics and set service fees.</p>
+                        </div>
+                        <div class="business-item">
+                            <h4><i class="fas fa-cocktail"></i> Bar/Club</h4>
+                            <div class="business-details">
+                                <span class="price"><i class="fas fa-tag"></i> Purchase: ,000,000</span>
+                                <span class="income"><i class="fas fa-dollar-sign"></i> Income: ,000-40,000/day</span>
+                            </div>
+                            <p>Host events, sell drinks, and create a social hub. High profit potential.</p>
+                        </div>
+                        <div class="business-item">
+                            <h4><i class="fas fa-utensils"></i> Restaurant</h4>
+                            <div class="business-details">
+                                <span class="price"><i class="fas fa-tag"></i> Purchase: ,000</span>
+                                <span class="income"><i class="fas fa-dollar-sign"></i> Income: ,000-25,000/day</span>
+                            </div>
+                            <p>Prepare and serve food. Hire chefs and create unique menus.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="economy-section">
+                    <div class="section-icon criminal-icon">
+                        <i class="fas fa-mask"></i>
+                    </div>
+                    <h3>Criminal Activities</h3>
+                    <p class="section-description">High risk, high reward illegal operations</p>
+                    <div class="crime-list">
+                        <div class="crime-item">
+                            <div class="crime-header">
+                                <h4><i class="fas fa-car"></i> Vehicle Theft</h4>
+                                <span class="crime-reward low-risk">Low Risk</span>
+                            </div>
+                            <div class="crime-details">
+                                <span><i class="fas fa-coins"></i> Payout: ,000-15,000</span>
+                                <span><i class="fas fa-clock"></i> Cooldown: 15 minutes</span>
+                            </div>
+                            <p>Steal and chop vehicles for parts. Quick money with moderate risk.</p>
+                        </div>
+                        <div class="crime-item">
+                            <div class="crime-header">
+                                <h4><i class="fas fa-pills"></i> Drug Dealing</h4>
+                                <span class="crime-reward medium-risk">Medium Risk</span>
+                            </div>
+                            <div class="crime-details">
+                                <span><i class="fas fa-coins"></i> Profit: ,000-50,000/run</span>
+                                <span><i class="fas fa-clock"></i> Time: 30-60 minutes</span>
+                            </div>
+                            <p>Process and sell narcotics. Requires gang affiliation or connections.</p>
+                        </div>
+                        <div class="crime-item">
+                            <div class="crime-header">
+                                <h4><i class="fas fa-store-alt"></i> Store Robbery</h4>
+                                <span class="crime-reward medium-risk">Medium Risk</span>
+                            </div>
+                            <div class="crime-details">
+                                <span><i class="fas fa-coins"></i> Payout: ,000-40,000</span>
+                                <span><i class="fas fa-clock"></i> Cooldown: 30 minutes</span>
+                            </div>
+                            <p>Hold up convenience stores. Police response likely.</p>
+                        </div>
+                        <div class="crime-item">
+                            <div class="crime-header">
+                                <h4><i class="fas fa-university"></i> Bank Heist</h4>
+                                <span class="crime-reward high-risk">High Risk</span>
+                            </div>
+                            <div class="crime-details">
+                                <span><i class="fas fa-coins"></i> Payout: ,000-300,000</span>
+                                <span><i class="fas fa-clock"></i> Cooldown: 3 hours</span>
+                            </div>
+                            <p>Major heist requiring planning and teamwork. Heavy police response.</p>
+                        </div>
+                        <div class="crime-item">
+                            <div class="crime-header">
+                                <h4><i class="fas fa-gem"></i> Jewelry Store</h4>
+                                <span class="crime-reward high-risk">High Risk</span>
+                            </div>
+                            <div class="crime-details">
+                                <span><i class="fas fa-coins"></i> Payout: ,000-400,000</span>
+                                <span><i class="fas fa-clock"></i> Cooldown: 4 hours</span>
+                            </div>
+                            <p>High-value target with maximum security. Requires skilled crew.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prices-section">
+                <h2><i class="fas fa-shopping-cart"></i> Item & Property Prices</h2>
+                <div class="prices-grid">
+                    <div class="price-category">
+                        <h3><i class="fas fa-car"></i> Vehicles</h3>
+                        <ul>
+                            <li><span>Basic Sedan</span><span>,000-30,000</span></li>
+                            <li><span>Sports Car</span><span>,000-500,000</span></li>
+                            <li><span>Super Car</span><span>,000-2,000,000</span></li>
+                            <li><span>Motorcycle</span><span>,000-50,000</span></li>
+                            <li><span>Truck/SUV</span><span>,000-150,000</span></li>
+                        </ul>
+                    </div>
+                    <div class="price-category">
+                        <h3><i class="fas fa-home"></i> Properties</h3>
+                        <ul>
+                            <li><span>Studio Apartment</span><span>,000-100,000</span></li>
+                            <li><span>2BR Apartment</span><span>,000-200,000</span></li>
+                            <li><span>Small House</span><span>,000-400,000</span></li>
+                            <li><span>Large House</span><span>,000-1,000,000</span></li>
+                            <li><span>Mansion</span><span>,000,000-5,000,000</span></li>
+                        </ul>
+                    </div>
+                    <div class="price-category">
+                        <h3><i class="fas fa-gun"></i> Weapons</h3>
+                        <ul>
+                            <li><span>Pistol</span><span>,000-15,000</span></li>
+                            <li><span>SMG</span><span>,000-40,000</span></li>
+                            <li><span>Rifle</span><span>,000-80,000</span></li>
+                            <li><span>Shotgun</span><span>,000-30,000</span></li>
+                            <li><span>Melee Weapons</span><span>-5,000</span></li>
+                        </ul>
+                    </div>
+                    <div class="price-category">
+                        <h3><i class="fas fa-hamburger"></i> Consumables</h3>
+                        <ul>
+                            <li><span>Food</span><span>-50</span></li>
+                            <li><span>Water/Drinks</span><span>-30</span></li>
+                            <li><span>Medical Supplies</span><span>-500</span></li>
+                            <li><span>Repair Kits</span><span>-1,000</span></li>
+                            <li><span>Phone</span><span>,000</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banking-section">
+                <h2><i class="fas fa-piggy-bank"></i> Banking System</h2>
+                <div class="banking-grid">
+                    <div class="bank-feature">
+                        <i class="fas fa-university"></i>
+                        <h3>Bank Accounts</h3>
+                        <p>Secure your money in bank accounts. Cash on hand can be lost if you're robbed!</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> FDIC Insured</li>
+                            <li><i class="fas fa-check"></i> 0.5% Daily Interest</li>
+                            <li><i class="fas fa-check"></i> Online Banking</li>
+                        </ul>
+                    </div>
+                    <div class="bank-feature">
+                        <i class="fas fa-credit-card"></i>
+                        <h3>Debit Cards</h3>
+                        <p>Use debit cards for contactless payments at businesses and ATMs.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> No Transaction Fees</li>
+                            <li><i class="fas fa-check"></i> Instant Transfers</li>
+                            <li><i class="fas fa-check"></i> Track Spending</li>
+                        </ul>
+                    </div>
+                    <div class="bank-feature">
+                        <i class="fas fa-money-check-alt"></i>
+                        <h3>Loans</h3>
+                        <p>Need capital? Take out loans for vehicles, properties, or business ventures.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Up to ,000</li>
+                            <li><i class="fas fa-check"></i> 5% Interest Rate</li>
+                            <li><i class="fas fa-check"></i> Flexible Terms</li>
+                        </ul>
+                    </div>
+                    <div class="bank-feature">
+                        <i class="fas fa-exchange-alt"></i>
+                        <h3>Transfers</h3>
+                        <p>Send money to other players instantly through the banking app.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Instant Processing</li>
+                            <li><i class="fas fa-check"></i> Secure Transfers</li>
+                            <li><i class="fas fa-check"></i> Transaction History</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="economy-tips">
+                <h2><i class="fas fa-lightbulb"></i> Money Making Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Diversify Income</h4>
+                        <p>Don't rely on one source. Mix legal jobs with side hustles for stable income.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Network</h4>
+                        <p>Build relationships. Many lucrative opportunities come from connections.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-piggy-bank"></i>
+                        <h4>Save Smart</h4>
+                        <p>Keep money in the bank. Cash on hand can be lost in robberies.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-store"></i>
+                        <h4>Invest</h4>
+                        <p>Business ownership provides passive income once established.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-balance-scale"></i>
+                        <h4>Risk vs Reward</h4>
+                        <p>Criminal activities pay more but come with jail time and fines if caught.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Cooperate</h4>
+                        <p>Team up for heists and businesses. Split work, split profits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-advanced">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="img/favicon.png" alt="Logo">
+                        <span>NoName <span class="rp-text">RP</span></span>
+                    </div>
+                    <p class="footer-description">Experience the ultimate FiveM roleplay on QBCore framework. Join our growing community today!</p>
+                    <div class="footer-socials">
+                        <a href="https://discord.gg/HCdThGFfqN" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="rules.html"><i class="fas fa-gavel"></i> Rules</a></li>
+                        <li><a href="staff.html"><i class="fas fa-user-shield"></i> Staff</a></li>
+                        <li><a href="alpha-whitelist.html"><i class="fas fa-star"></i> Alpha Access</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Server Info</h4>
+                    <ul>
+                        <li><i class="fas fa-server"></i> Status: <span style="color: #2ecc71">Online</span></li>
+                        <li><i class="fas fa-users"></i> Players: <span id="footer-players">0/64</span></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Region: US West</li>
+                        <li><i class="fas fa-code"></i> Framework: QBCore</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <a href="connect.html" class="btn-secondary-advanced"><i class="fas fa-play"></i> Connect Now</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NoName RP. All rights reserved. Developed by DriizzyyB</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="../config.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

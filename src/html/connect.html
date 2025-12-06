@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect to Server - NoName RP</title>
+    <link rel="icon" href="../../img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="scroll-progress"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">
+                <img src="../../img/favicon.png" alt="NoNameRP Logo" class="nav-logo-img">
+                <span class="logo-text">NoName <span class="rp-text">RP</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../../index.html" class="nav-link">Home</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link">Server <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rules.html"><i class="fas fa-gavel"></i> Rules</a></li>
+                        <li><a href="staff.html"><i class="fas fa-user-shield"></i> Staff Team</a></li>
+                        <li><a href="economy.html"><i class="fas fa-coins"></i> Economy</a></li>
+                        <li><a href="gangs.html"><i class="fas fa-skull"></i> Gangs</a></li>
+                    </ul>
+                </li>
+                <li><a href="alpha-whitelist.html" class="nav-link">Alpha Access</a></li>
+                <li><a href="connect.html" class="nav-link">Connect</a></li>
+                <li><a href="https://discord.gg/HCdThGFfqN" class="nav-link nav-discord" target="_blank"><i class="fab fa-discord"></i> Discord</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content-center">
+                <span class="hero-badge"><i class="fas fa-play"></i> JOIN NOW</span>
+                <h1 class="page-title">Connect to Server</h1>
+                <p class="page-description">Follow these simple steps to join NoName RP and start your roleplay journey</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="connect-content">
+        <div class="container">
+            <div class="server-status-banner">
+                <div class="status-indicator online">
+                    <i class="fas fa-circle"></i> Server Online
+                </div>
+                <div class="server-info-row">
+                    <div class="info-item">
+                        <i class="fas fa-users"></i>
+                        <span><strong id="player-count">0</strong>/64 Players</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>US West</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>Low Latency</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="connect-methods">
+                <h2><i class="fas fa-plug"></i> Connection Methods</h2>
+                <div class="methods-grid">
+                    <div class="method-card featured">
+                        <div class="method-badge">Recommended</div>
+                        <i class="fas fa-mouse-pointer method-icon"></i>
+                        <h3>Direct Connect</h3>
+                        <p>Fastest way to connect. Click the button below to launch FiveM and connect automatically.</p>
+                        <div class="server-ip-box">
+                            <code id="server-ip">YOUR_SERVER_IP:30120</code>
+                            <button class="copy-btn" onclick="copyIP()"><i class="fas fa-copy"></i></button>
+                        </div>
+                        <a href="fivem://connect/YOUR_SERVER_IP:30120" class="btn-primary-advanced btn-large">
+                            <i class="fas fa-play"></i> Launch & Connect
+                        </a>
+                    </div>
+
+                    <div class="method-card">
+                        <i class="fas fa-search method-icon"></i>
+                        <h3>Server Browser</h3>
+                        <p>Find us in the FiveM server browser by searching for "NoName RP".</p>
+                        <ol class="method-steps">
+                            <li>Open FiveM</li>
+                            <li>Click on "Server List"</li>
+                            <li>Search for "NoName RP"</li>
+                            <li>Click to connect</li>
+                        </ol>
+                    </div>
+
+                    <div class="method-card">
+                        <i class="fas fa-terminal method-icon"></i>
+                        <h3>F8 Console</h3>
+                        <p>Use the FiveM console to connect directly to our server.</p>
+                        <ol class="method-steps">
+                            <li>Launch FiveM</li>
+                            <li>Press F8 to open console</li>
+                            <li>Type: <code>connect YOUR_SERVER_IP:30120</code></li>
+                            <li>Press Enter</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="setup-guide">
+                <h2><i class="fas fa-download"></i> First Time Setup</h2>
+                <div class="setup-steps">
+                    <div class="setup-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3><i class="fas fa-gamepad"></i> Own GTA V</h3>
+                            <p>You must own a legitimate copy of Grand Theft Auto V on Steam, Epic Games, or Rockstar Games Launcher.</p>
+                            <a href="https://store.steampowered.com/app/271590/" target="_blank" class="setup-link">
+                                <i class="fab fa-steam"></i> Buy on Steam
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="setup-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3><i class="fas fa-download"></i> Install FiveM</h3>
+                            <p>Download and install the FiveM client. This is required to play on any FiveM server.</p>
+                            <a href="https://fivem.net" target="_blank" class="setup-link">
+                                <i class="fas fa-external-link-alt"></i> Download FiveM
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="setup-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3><i class="fab fa-discord"></i> Join Discord</h3>
+                            <p>Join our Discord server to stay updated, apply for whitelist, and connect with the community.</p>
+                            <a href="https://discord.gg/HCdThGFfqN" target="_blank" class="setup-link">
+                                <i class="fab fa-discord"></i> Join Discord
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="setup-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3><i class="fas fa-clipboard-check"></i> Get Whitelisted</h3>
+                            <p>During alpha, whitelist is required. Apply in our Discord server to get access.</p>
+                            <a href="alpha-whitelist.html" class="setup-link">
+                                <i class="fas fa-star"></i> Alpha Whitelist Info
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="setup-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3><i class="fas fa-play"></i> Connect & Play</h3>
+                            <p>Once whitelisted, use any connection method above to join the server and start your RP journey!</p>
+                            <a href="#" onclick="scrollToTop()" class="setup-link">
+                                <i class="fas fa-arrow-up"></i> Back to Connect Methods
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="requirements-section">
+                <h2><i class="fas fa-desktop"></i> System Requirements</h2>
+                <div class="requirements-grid">
+                    <div class="req-card">
+                        <h3><i class="fas fa-check-circle"></i> Minimum</h3>
+                        <ul>
+                            <li><strong>OS:</strong> Windows 10 64-bit</li>
+                            <li><strong>Processor:</strong> Intel Core i5 3470 / AMD FX-8350</li>
+                            <li><strong>Memory:</strong> 8 GB RAM</li>
+                            <li><strong>Graphics:</strong> NVIDIA GTX 660 2GB / AMD HD 7870 2GB</li>
+                            <li><strong>Storage:</strong> 72 GB available space</li>
+                            <li><strong>Network:</strong> Broadband internet connection</li>
+                        </ul>
+                    </div>
+                    <div class="req-card recommended">
+                        <h3><i class="fas fa-star"></i> Recommended</h3>
+                        <ul>
+                            <li><strong>OS:</strong> Windows 10/11 64-bit</li>
+                            <li><strong>Processor:</strong> Intel Core i7 / AMD Ryzen 7</li>
+                            <li><strong>Memory:</strong> 16 GB RAM</li>
+                            <li><strong>Graphics:</strong> NVIDIA GTX 1660 / AMD RX 580</li>
+                            <li><strong>Storage:</strong> 72 GB SSD space</li>
+                            <li><strong>Network:</strong> High-speed broadband</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="troubleshooting-section">
+                <h2><i class="fas fa-wrench"></i> Troubleshooting</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span>Can't connect to server?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Make sure you're whitelisted first. If whitelisted, try these steps:</p>
+                            <ul>
+                                <li>Restart FiveM completely</li>
+                                <li>Clear FiveM cache (Settings > Clear Cache)</li>
+                                <li>Check if your antivirus is blocking FiveM</li>
+                                <li>Verify GTA V files in Steam/Epic/Rockstar</li>
+                                <li>Contact support on Discord if issue persists</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span>Getting infinite loading screen?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>This is usually a caching issue. Try these solutions:</p>
+                            <ul>
+                                <li>Let it load for at least 5 minutes first time</li>
+                                <li>Clear FiveM cache and restart</li>
+                                <li>Make sure GTA V is fully updated</li>
+                                <li>Disable any GTA V mods you may have</li>
+                                <li>Check your internet connection</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span>Low FPS or stuttering?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Optimize your game settings:</p>
+                            <ul>
+                                <li>Lower graphics settings in GTA V settings</li>
+                                <li>Close background applications</li>
+                                <li>Update graphics drivers</li>
+                                <li>Increase virtual memory in Windows</li>
+                                <li>Play on SSD if possible</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span>FiveM crashes on startup?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Common crash fixes:</p>
+                            <ul>
+                                <li>Run FiveM as administrator</li>
+                                <li>Add FiveM to antivirus exceptions</li>
+                                <li>Reinstall FiveM completely</li>
+                                <li>Verify you have latest Windows updates</li>
+                                <li>Check if GTA V launches normally first</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="support-cta">
+                <i class="fas fa-life-ring support-icon"></i>
+                <h2>Still Need Help?</h2>
+                <p>Our support team is available 24/7 on Discord to help you get connected!</p>
+                <a href="https://discord.gg/HCdThGFfqN" class="btn-discord-advanced btn-large">
+                    <i class="fab fa-discord"></i> Get Support on Discord
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-advanced">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="img/favicon.png" alt="Logo">
+                        <span>NoName <span class="rp-text">RP</span></span>
+                    </div>
+                    <p class="footer-description">Experience the ultimate FiveM roleplay on QBCore framework. Join our growing community today!</p>
+                    <div class="footer-socials">
+                        <a href="https://discord.gg/HCdThGFfqN" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="rules.html"><i class="fas fa-gavel"></i> Rules</a></li>
+                        <li><a href="staff.html"><i class="fas fa-user-shield"></i> Staff</a></li>
+                        <li><a href="alpha-whitelist.html"><i class="fas fa-star"></i> Alpha Access</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Server Info</h4>
+                    <ul>
+                        <li><i class="fas fa-server"></i> Status: <span style="color: #2ecc71">Online</span></li>
+                        <li><i class="fas fa-users"></i> Players: <span id="footer-players">0/64</span></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Region: US West</li>
+                        <li><i class="fas fa-code"></i> Framework: QBCore</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <a href="connect.html" class="btn-secondary-advanced"><i class="fas fa-play"></i> Connect Now</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NoName RP. All rights reserved. Developed by DriizzyyB</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function copyIP() {
+            const ip = document.getElementById('server-ip').textContent;
+            navigator.clipboard.writeText(ip).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                btn.innerHTML = '<i class="fas fa-check"></i>';
+                setTimeout(() => {
+                    btn.innerHTML = '<i class="fas fa-copy"></i>';
+                }, 2000);
+            });
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('.fa-chevron-down');
+            answer.classList.toggle('active');
+            icon.style.transform = answer.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="../config.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
